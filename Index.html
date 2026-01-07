@@ -83,12 +83,73 @@
     <script>
         document.getElementById('sms-form').addEventListener('submit', function(e) {
             e.preventDefault();
+
+            // Validate consent checkbox
             if(!document.getElementById('consent-check').checked) {
-                alert('Please check the consent box to continue.');
+                alert('⚠️ Please check the consent box to agree to receive SMS notifications.');
                 return;
             }
-            document.getElementById('form-message').style.display = 'block';
+
+            // Get phone number
+            var phoneNumber = document.getElementById('phone').value.trim();
+
+            // Basic phone validation
+            if(!phoneNumber) {
+                alert('⚠️ Please enter your phone number.');
+                return;
+            }
+
+            // Show success message
+            var messageDiv = document.getElementById('form-message');
+            messageDiv.innerHTML = `
+                <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32; margin-bottom: 10px;">✅ Registration Successful!</h3>
+                    <p style="margin-bottom: 8px;"><strong>Welcome to Trading Alerts!</strong></p>
+                    <p style="margin-bottom: 12px;">Your subscription has been confirmed for: <strong>${phoneNumber}</strong></p>
+                    <div style="background: white; padding: 15px; border-radius: 6px; margin: 15px 0;">
+                        <p style="margin-bottom: 8px; font-weight: bold; color: #764ba2;">What to Expect:</p>
+                        <ul style="text-align: left; margin-left: 20px; margin-top: 10px; color: #333;">
+                            <li>You'll receive real-time trading alerts from NinjaTrader and TradingView</li>
+                            <li>Expect 10-30 messages per day during active trading hours</li>
+                            <li>Message and data rates may apply based on your carrier plan</li>
+                        </ul>
+                    </div>
+                    <div style="background: #fff3cd; padding: 12px; border-radius: 6px; margin: 15px 0; font-size: 0.9em;">
+                        <strong>📱 Manage Your Subscription:</strong><br>
+                        • Reply <strong>STOP</strong> to unsubscribe at any time<br>
+                        • Reply <strong>HELP</strong> for assistance<br>
+                        • Email <a href="mailto:raghustocks2020@gmail.com">raghustocks2020@gmail.com</a> for support
+                    </div>
+                    <button onclick="location.reload()" style="margin-top: 15px; padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                        Register Another Number
+                    </button>
+                </div>
+            `;
+            messageDiv.style.display = 'block';
             this.style.display = 'none';
+
+            // Log to console for debugging
+            console.log('Form submitted:', {
+                phone: phoneNumber,
+                consent: true,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        // Add real-time phone number formatting (optional enhancement)
+        document.getElementById('phone').addEventListener('input', function(e) {
+            var value = e.target.value.replace(/\D/g, '');
+            if(value.length > 0) {
+                if(value.length <= 3) {
+                    e.target.value = value;
+                } else if(value.length <= 6) {
+                    e.target.value = '(' + value.slice(0,3) + ') ' + value.slice(3);
+                } else if(value.length <= 10) {
+                    e.target.value = '(' + value.slice(0,3) + ') ' + value.slice(3,6) + '-' + value.slice(6);
+                } else {
+                    e.target.value = '+' + value.slice(0,1) + ' (' + value.slice(1,4) + ') ' + value.slice(4,7) + '-' + value.slice(7,11);
+                }
+            }
         });
     </script>
 </body>
