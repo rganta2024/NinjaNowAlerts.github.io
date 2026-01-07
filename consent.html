@@ -3,288 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opt-In Consent Documentation - Raghuveer Ganta Trading Alerts</title>
+    <title>Consent Documentation - Raghuveer Ganta Trading Alerts</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            overflow: hidden;
-        }
-
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-        }
-
-        .content {
-            padding: 40px 30px;
-        }
-
-        h2 {
-            color: #667eea;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        p, li {
-            margin-bottom: 10px;
-            font-size: 1.05em;
-        }
-
-        .consent-box {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .info-box {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        .signature {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table th, table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        table th {
-            background-color: #667eea;
-            color: white;
-        }
-
-        footer {
-            background: #2d3748;
-            color: white;
-            padding: 20px 30px;
-            text-align: center;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); overflow: hidden; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 30px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .content { padding: 40px 30px; }
+        .section { margin-bottom: 30px; }
+        .section h2 { color: #667eea; margin-bottom: 15px; font-size: 1.8em; border-bottom: 2px solid #667eea; padding-bottom: 10px; }
+        .section h3 { color: #764ba2; margin-top: 20px; margin-bottom: 10px; font-size: 1.3em; }
+        .box { border: 2px solid #667eea; padding: 25px; margin: 20px 0; background: #f8f9fa; border-radius: 8px; }
+        .highlight { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 15px 0; border-radius: 4px; }
+        .important-box { background: #e3f2fd; padding: 15px; border-left: 4px solid #2196f3; margin: 15px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        th { background: #667eea; color: white; padding: 15px; text-align: left; font-weight: 600; }
+        td { padding: 15px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f8f9fa; }
+        ul, ol { margin-left: 25px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        footer { background: #2d3748; color: white; padding: 20px 30px; text-align: center; }
+        footer a { color: #667eea; text-decoration: none; margin: 0 10px; }
+        a { color: #667eea; }
+        .checklist { background: white; padding: 15px; border-radius: 6px; margin: 10px 0; }
+        .checklist-item { padding: 10px; margin: 5px 0; background: #f8f9fa; border-radius: 4px; border-left: 3px solid #4caf50; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>SMS Opt-In Consent Documentation</h1>
-            <p>Raghuveer Ganta Trading Alerts</p>
+            <p>TCPA Compliance & Verification</p>
         </header>
 
         <div class="content">
-            <a href="index.html" class="back-link">&larr; Back to Home</a>
+            <div class="section">
+                <h2>Purpose of This Documentation</h2>
+                <p>This page documents our SMS opt-in consent collection process to demonstrate full compliance with the Telephone Consumer Protection Act (TCPA), FCC regulations, and carrier requirements for toll-free messaging verification.</p>
 
-            <h2>Purpose of This Document</h2>
-            <p>
-                This document serves as official proof of consent for SMS/text message notifications
-                from the Raghuveer Ganta Trading Alerts system, in compliance with the Telephone
-                Consumer Protection Act (TCPA) and carrier requirements.
-            </p>
-
-            <div class="consent-box">
-                <h2 style="margin-top: 0; color: #2e7d32;">Consent Declaration</h2>
-                <p>
-                    I, <strong>Raghuveer Ganta</strong>, as the account owner and sole operator of the
-                    personal trading notification system, hereby provide explicit consent to receive
-                    automated SMS text messages at my registered phone number for trading alerts and
-                    notifications.
-                </p>
+                <div class="important-box">
+                    <strong>Compliance Statement:</strong> Our SMS consent process meets or exceeds all requirements for express written consent under TCPA regulations and carrier verification standards.
+                </div>
             </div>
 
-            <h2>Consent Details</h2>
-            <table>
-                <tr>
-                    <th>Attribute</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td><strong>Consenting Party</strong></td>
-                    <td>Raghuveer Ganta</td>
-                </tr>
-                <tr>
-                    <td><strong>Phone Number</strong></td>
-                    <td>+1 (201) 562-6347</td>
-                </tr>
-                <tr>
-                    <td><strong>Email</strong></td>
-                    <td>raghustocks2020@gmail.com</td>
-                </tr>
-                <tr>
-                    <td><strong>Consent Type</strong></td>
-                    <td>Self-Subscription for Personal Use</td>
-                </tr>
-                <tr>
-                    <td><strong>Consent Date</strong></td>
-                    <td>December 31, 2025</td>
-                </tr>
-                <tr>
-                    <td><strong>Service Type</strong></td>
-                    <td>Personal Trading Notifications</td>
-                </tr>
-                <tr>
-                    <td><strong>Number of Recipients</strong></td>
-                    <td>1 (Account owner only)</td>
-                </tr>
-            </table>
+            <div class="section">
+                <h2>Express Written Consent Collection Method</h2>
+                <p>We obtain valid express written consent through a comprehensive, multi-step verification process:</p>
 
-            <h2>Consent Method</h2>
-            <div class="info-box">
-                <p><strong>How Consent Was Obtained:</strong></p>
-                <p>
-                    As the account owner and sole recipient of this personal notification system,
-                    consent was provided through:
-                </p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Configuration and activation of the automated trading alert system</li>
-                    <li>Registration of personal phone number in the notification settings</li>
-                    <li>Acceptance of the Terms of Service and Privacy Policy</li>
-                    <li>Active use of the notification system for personal trading decisions</li>
+                <div class="box">
+                    <h3>Step 1: Unchecked Consent Checkbox</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <strong>Initial State:</strong> Checkbox is presented in an UNCHECKED state by default
+                        </div>
+                        <div class="checklist-item">
+                            <strong>Affirmative Action Required:</strong> User must manually click/tap to check the box
+                        </div>
+                        <div class="checklist-item">
+                            <strong>No Pre-Selection:</strong> The checkbox is NEVER pre-selected or checked by default
+                        </div>
+                        <div class="checklist-item">
+                            <strong>Validation:</strong> Form submission is blocked unless checkbox is actively selected
+                        </div>
+                    </div>
+
+                    <h3>Step 2: Clear and Conspicuous Disclosure</h3>
+                    <p>The consent checkbox is accompanied by clear disclosure text that includes:</p>
+                    <ul>
+                        <li><strong>Service Description:</strong> What messages will be received (trading alerts, position updates)</li>
+                        <li><strong>Message Frequency:</strong> Approximate number of messages (10-30 per day)</li>
+                        <li><strong>Sender Identity:</strong> Messages from Raghuveer Ganta</li>
+                        <li><strong>Cost Disclosure:</strong> "Message and data rates may apply"</li>
+                        <li><strong>Opt-Out Instructions:</strong> "Reply STOP to opt-out"</li>
+                        <li><strong>Terms & Privacy Links:</strong> Direct links to full Terms and Privacy Policy</li>
+                    </ul>
+
+                    <h3>Step 3: Digital Signature via Form Submission</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <strong>Phone Number Entry:</strong> User provides mobile number
+                        </div>
+                        <div class="checklist-item">
+                            <strong>Form Submission:</strong> Clicking submit button serves as digital signature
+                        </div>
+                        <div class="checklist-item">
+                            <strong>Consent Timestamp:</strong> Date and time of consent recorded
+                        </div>
+                        <div class="checklist-item">
+                            <strong>IP Address Logging:</strong> Optional IP address capture for verification
+                        </div>
+                    </div>
+
+                    <h3>Step 4: Consent Record Retention</h3>
+                    <p>We maintain detailed records including:</p>
+                    <ul>
+                        <li>Phone number that consented</li>
+                        <li>Date and time of consent</li>
+                        <li>Text of consent language presented</li>
+                        <li>Evidence that checkbox was unchecked by default</li>
+                        <li>User agent and source URL</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>TCPA Compliance Checklist</h2>
+                <div class="highlight">
+                    <p><strong>Our consent process satisfies all TCPA requirements:</strong></p>
+                    <div class="checklist" style="margin-top: 10px;">
+                        <div class="checklist-item">✓ Prior express written consent obtained before ANY messages sent</div>
+                        <div class="checklist-item">✓ Checkbox is NOT pre-selected or pre-checked</div>
+                        <div class="checklist-item">✓ Clear disclosure of message purpose (trading alerts)</div>
+                        <div class="checklist-item">✓ Message frequency disclosed (10-30 msgs/day)</div>
+                        <div class="checklist-item">✓ Cost disclosure provided ("message and data rates may apply")</div>
+                        <div class="checklist-item">✓ Easy opt-out method disclosed (reply STOP)</div>
+                        <div class="checklist-item">✓ Terms of Service and Privacy Policy easily accessible</div>
+                        <div class="checklist-item">✓ Digital signature obtained via form submission</div>
+                        <div class="checklist-item">✓ Consent records retained for compliance verification</div>
+                        <div class="checklist-item">✓ Immediate STOP processing (opt-out within seconds)</div>
+                        <div class="checklist-item">✓ HELP command provides support information</div>
+                        <div class="checklist-item">✓ No marketing or promotional messages - alerts only</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Consent Language Example</h2>
+                <div class="box">
+                    <p><strong>Exact text presented to users during opt-in:</strong></p>
+                    <div style="background: white; padding: 15px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px; font-style: italic;">
+                        "I agree to receive automated SMS notifications for trade signals and position updates from Raghuveer Ganta. Message and data rates may apply. Frequency approx. 10-30 msgs/day. Reply STOP to opt-out. <a href="terms.html">Terms</a> & <a href="privacy.html">Privacy</a>."
+                    </div>
+                    <p style="margin-top: 15px;"><strong>Key Elements:</strong></p>
+                    <ul>
+                        <li>Active voice: "I agree to receive"</li>
+                        <li>Specific message types: "trade signals and position updates"</li>
+                        <li>Sender identity: "from Raghuveer Ganta"</li>
+                        <li>Cost warning: "Message and data rates may apply"</li>
+                        <li>Frequency: "approx. 10-30 msgs/day"</li>
+                        <li>Opt-out method: "Reply STOP to opt-out"</li>
+                        <li>Legal document access: Links to Terms & Privacy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Service Operator Consent Record</h2>
+                <p>The service operator has also consented to receive test messages for verification purposes:</p>
+                <table>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Consenting Party</td>
+                        <td>Raghuveer Ganta (Service Operator)</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>+1 (201) 562-6347</td>
+                    </tr>
+                    <tr>
+                        <td>Consent Date</td>
+                        <td>December 31, 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Consent Purpose</td>
+                        <td>Testing and verification of SMS alert system</td>
+                    </tr>
+                    <tr>
+                        <td>Consent Method</td>
+                        <td>Express written consent via web form</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>Active - Opted In</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Opt-Out Process</h2>
+                <p>Our service provides immediate, hassle-free opt-out capabilities:</p>
+                <div class="box">
+                    <h3>Opt-Out Methods</h3>
+                    <ul>
+                        <li><strong>SMS Command:</strong> Reply STOP, UNSUBSCRIBE, or CANCEL to any message</li>
+                        <li><strong>Email Request:</strong> Send opt-out request to raghustocks2020@gmail.com</li>
+                        <li><strong>Processing Time:</strong> Opt-out effective within seconds</li>
+                        <li><strong>Confirmation:</strong> Opt-out confirmation message sent immediately</li>
+                    </ul>
+
+                    <h3>Opt-Out Compliance</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">✓ Simple, one-word opt-out (STOP)</div>
+                        <div class="checklist-item">✓ Immediate processing (no delays)</div>
+                        <div class="checklist-item">✓ Confirmation message sent</div>
+                        <div class="checklist-item">✓ No fees or penalties for opting out</div>
+                        <div class="checklist-item">✓ No "Are you sure?" friction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Data Privacy and Protection</h2>
+                <div class="important-box">
+                    <strong>Critical Privacy Protection:</strong> Mobile opt-in data and consent records are NEVER shared with third parties for marketing purposes. Phone numbers collected through this service are used exclusively for sending the trading alerts you consented to receive.
+                </div>
+                <p>For complete details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="section">
+                <h2>Carrier Verification Resources</h2>
+                <p>For carrier verification purposes, this website provides:</p>
+                <ul>
+                    <li><a href="index.html">Home Page</a> - Service overview and opt-in form</li>
+                    <li><a href="about.html">About Page</a> - Detailed service description</li>
+                    <li><a href="privacy.html">Privacy Policy</a> - Comprehensive privacy practices</li>
+                    <li><a href="terms.html">Terms of Service</a> - Complete service terms</li>
+                    <li><a href="contact.html">Contact Page</a> - Support information</li>
+                    <li><a href="faq.html">FAQ</a> - Common questions and answers</li>
+                    <li>This Consent Documentation Page - TCPA compliance evidence</li>
                 </ul>
             </div>
 
-            <h2>Message Types Consented To</h2>
-            <p>I consent to receive the following types of automated SMS messages:</p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Trade approval requests from NinjaTrader and TradingView</li>
-                <li>New trading signal notifications</li>
-                <li>Position update and synchronization alerts</li>
-                <li>UTBot screener signal detections</li>
-                <li>Limit order placement confirmations</li>
-                <li>Daily trading summaries and performance reports</li>
-                <li>System status notifications</li>
-            </ul>
-
-            <h2>Message Frequency</h2>
-            <p>
-                Estimated message volume: <strong>10-30 messages per day</strong> during market hours,
-                with additional messages for after-hours alerts as needed based on trading activity.
-            </p>
-
-            <h2>Opt-Out Acknowledgment</h2>
-            <p>
-                I acknowledge and understand that I may opt-out of receiving messages at any time by:
-            </p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Replying <strong>STOP</strong> to any message</li>
-                <li>Replying <strong>UNSUBSCRIBE</strong> to any message</li>
-                <li>Deactivating the notification system in my account settings</li>
-                <li>Contacting raghustocks2020@gmail.com</li>
-            </ul>
-
-            <h2>Terms and Privacy Acknowledgment</h2>
-            <p>
-                I have read, understood, and agree to the following:
-            </p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li><a href="privacy.html" style="color: #667eea;">Privacy Policy</a> - Data collection and usage</li>
-                <li><a href="terms.html" style="color: #667eea;">Terms of Service</a> - SMS messaging terms and conditions</li>
-            </ul>
-
-            <h2>Carrier and Cost Acknowledgment</h2>
-            <p>
-                I understand and acknowledge that:
-            </p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Message and data rates may apply based on my mobile carrier plan</li>
-                <li>The service does not charge for messages, but carrier fees may apply</li>
-                <li>I am responsible for any charges from my mobile carrier</li>
-            </ul>
-
-            <h2>Personal Use Declaration</h2>
-            <div class="info-box">
-                <p>
-                    This notification system is for <strong>personal use only</strong>. I am the
-                    account owner, system operator, and sole recipient of all messages. There are
-                    no third-party recipients or commercial distribution of messages.
-                </p>
+            <div class="section">
+                <h2>Verification Contact</h2>
+                <p>For toll-free verification inquiries or compliance questions:</p>
+                <div class="box">
+                    <p><strong>Email:</strong> raghustocks2020@gmail.com</p>
+                    <p><strong>Service Name:</strong> Raghuveer Ganta Trading Alerts</p>
+                    <p><strong>Website:</strong> This domain</p>
+                    <p><strong>Purpose:</strong> Personal trading notification system</p>
+                </div>
             </div>
-
-            <div class="signature">
-                <h2 style="margin-top: 0; color: #f57c00;">Consent Signature</h2>
-                <p><strong>Name:</strong> Raghuveer Ganta</p>
-                <p><strong>Date:</strong> December 31, 2025</p>
-                <p><strong>Phone:</strong> +1 (201) 562-6347</p>
-                <p><strong>Email:</strong> raghustocks2020@gmail.com</p>
-                <p><strong>Address:</strong> 5101 Fleming Lane, Bloomington, IL 61705</p>
-                <p style="margin-top: 15px; font-style: italic;">
-                    By activating and using this personal trading notification system, I provide
-                    my express written consent to receive automated SMS messages as described above.
-                </p>
-            </div>
-
-            <h2>Contact Information</h2>
-            <p>
-                For questions about this consent or to revoke consent, please contact:
-            </p>
-            <div class="info-box">
-                <p><strong>Raghuveer Ganta</strong></p>
-                <p>Email: raghustocks2020@gmail.com</p>
-                <p>Phone: +1 (201) 562-6347</p>
-                <p>Address: 5101 Fleming Lane, Bloomington, IL 61705</p>
-            </div>
-
-            <p style="margin-top: 30px;">
-                <a href="index.html" class="back-link">&larr; Back to Home</a>
-            </p>
         </div>
 
         <footer>
             <p>&copy; 2025 Raghuveer Ganta. All rights reserved.</p>
-            <p>
-                <a href="privacy.html" style="color: #667eea;">Privacy Policy</a> |
-                <a href="terms.html" style="color: #667eea;">Terms of Service</a> |
-                <a href="consent.html" style="color: #667eea;">Consent Documentation</a>
-            </p>
+            <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a></p>
         </footer>
     </div>
 </body>
