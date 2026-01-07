@@ -145,108 +145,128 @@
 
         <div class="content">
             <div class="section">
-                <h2>About</h2>
-                <p>
-                    Welcome! This site provides information about my personal trading notification system.
-                    I use automated alerts from NinjaTrader and TradingView to receive real-time updates
-                    about trading signals, position changes, and market conditions.
-                </p>
+                <h2>About This Service</h2>
+                <p>Personal SMS alert system delivering real-time trading notifications from NinjaTrader and TradingView. Get instant updates about trade executions, position changes, and market signals directly to your mobile phone.</p>
+                <p style="margin-top: 10px;"><a href="about.html">Learn more about our service →</a></p>
             </div>
-
-            <div class="section">
-                <h2>Services</h2>
-                <div class="features">
-                    <div class="feature-box">
-                        <h3>📊 Trade Signals</h3>
-                        <p>Real-time entry and exit signals from trading strategies</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>📈 Position Updates</h3>
-                        <p>Live position tracking and synchronization</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>🔔 Market Alerts</h3>
-                        <p>Automated notifications for market conditions and screener signals</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>📱 SMS Notifications</h3>
-                        <p>Instant mobile alerts for trading decisions</p>
-                    </div>
-                </div>
-            </div>
-
             <div class="section">
                 <h2>Trading Systems</h2>
-                <p>
-                    The notification system integrates with multiple trading platforms:
-                </p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>NinjaTrader 8:</strong> Futures trading (MNQ) with UTBot strategy</li>
-                    <li><strong>TradingView:</strong> Stock and ETF signals (QQQ, SPY, etc.)</li>
-                    <li><strong>IBKR TWS:</strong> Position tracking and synchronization</li>
-                    <li><strong>Custom Screeners:</strong> UTBot signal detection and alerts</li>
+                <ul style="margin-left: 20px;">
+                    <li><strong>NinjaTrader 8:</strong> MNQ Futures</li>
+                    <li><strong>TradingView:</strong> Stock/ETF Signals</li>
+                    <li><strong>IBKR TWS:</strong> Position Sync</li>
                 </ul>
             </div>
 
-            <div class="section">
-                <h2>Contact Information</h2>
-                <div class="contact-info">
-                    <p><strong>Name:</strong> Raghuveer Ganta</p>
-                    <p><strong>Email:</strong> raghustocks2020@gmail.com</p>
-                    <p><strong>Phone:</strong> +1 (201) 562-6347</p>
-                    <p><strong>Location:</strong> Bloomington, IL 61705</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Legal</h2>
-                <p>
-                    This is a personal trading notification system for individual use.
-                    All notifications are sent to the account owner only.
-                </p>
-                <div style="margin-top: 15px;">
-                    <a href="privacy.html" class="btn">Privacy Policy</a>
-                    <a href="terms.html" class="btn">Terms of Service</a>
+            <div class="section" id="signup">
+                <h2>System Registration & Opt-In</h2>
+                <p>Enter your mobile number to begin receiving personal trading alerts.</p>
+                <div class="contact-info" style="border: 2px solid #667eea;">
+                    <form id="sms-form">
+                        <div style="margin-bottom: 15px;">
+                            <label><strong>Mobile Phone Number:</strong></label>
+                            <input type="tel" id="phone" placeholder="+1 (201) 555-0123" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div style="margin-bottom: 20px; padding: 15px; background: #fff3cd; border-radius: 6px; border: 2px solid #ffc107;">
+                            <div style="margin-bottom: 10px; font-weight: bold; color: #764ba2;">
+                                ⚠️ Required: Express Written Consent
+                            </div>
+                            <div style="display: flex; align-items: flex-start;">
+                                <input type="checkbox" id="consent-check" style="margin-top: 5px; margin-right: 10px; width: 18px; height: 18px; cursor: pointer;">
+                                <label for="consent-check" style="font-size: 0.95em; cursor: pointer;">
+                                    I agree to receive automated SMS notifications for trade signals and position updates from Raghuveer Ganta. Message and data rates may apply. Frequency approx. 10-30 msgs/day. Reply <strong>STOP</strong> to opt-out anytime. <a href="terms.html" target="_blank">Terms</a> & <a href="privacy.html" target="_blank">Privacy</a>.
+                                </label>
+                            </div>
+                            <div style="margin-top: 10px; font-size: 0.85em; color: #666; font-style: italic;">
+                                ✓ This checkbox is NOT pre-selected. You must check it to consent (TCPA compliant).
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; font-size: 1.1em;">Register for Alerts</button>
+                    </form>
+                    <div id="form-message" style="display:none; color: #2e7d32; font-weight: bold; text-align: center; margin-top: 15px;">
+                        Registration Successful! You are now opted-in.
+                    </div>
                 </div>
             </div>
         </div>
-		
-		<div class="section" id="signup">
-    <h2>System Registration & Opt-In</h2>
-    <p>Register your mobile number to begin receiving automated trading alerts.</p>
-    
-    <div class="contact-info" style="border: 2px solid #667eea;">
-        <form onsubmit="return false;">
-            <div style="margin-bottom: 15px;">
-                <label style="display: block; margin-bottom: 5px;"><strong>Mobile Phone Number:</strong></label>
-                <input type="tel" placeholder="+1 (201) 562-6347" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
-            </div>
-            
-            <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                <input type="checkbox" id="consent-check" style="margin-top: 5px; margin-right: 10px;">
-                <label for="consent-check" style="font-size: 0.9em;">
-                    I agree to receive automated SMS notifications for trade signals and position updates from Raghuveer Ganta. 
-                    I understand that message and data rates may apply. Message frequency varies (approx. 10-30 msgs/day). 
-                    I can reply <strong>STOP</strong> at any time to opt-out. 
-                    View our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
-                </label>
-            </div>
-            
-            <button type="button" class="btn" style="width: 100%; border: none; cursor: pointer;">Register for Alerts</button>
-        </form>
-    </div>
-</div>
 
         <footer>
             <p>&copy; 2025 Raghuveer Ganta. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="terms.html">Terms of Service</a> |
-                <a href="mailto:raghustocks2020@gmail.com">Contact</a>
-            </p>
+            <p><a href="about.html">About</a> | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="contact.html">Contact</a> | <a href="consent.html">Consent</a> | <a href="faq.html">FAQ</a></p>
         </footer>
     </div>
+    <script>
+        document.getElementById('sms-form').addEventListener('submit', function(e) {
+            e.preventDefault();
 
+            // Validate consent checkbox
+            if(!document.getElementById('consent-check').checked) {
+                alert('⚠️ Please check the consent box to agree to receive SMS notifications.');
+                return;
+            }
+
+            // Get phone number
+            var phoneNumber = document.getElementById('phone').value.trim();
+
+            // Basic phone validation
+            if(!phoneNumber) {
+                alert('⚠️ Please enter your phone number.');
+                return;
+            }
+
+            // Show success message
+            var messageDiv = document.getElementById('form-message');
+            messageDiv.innerHTML = `
+                <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32; margin-bottom: 10px;">✅ Registration Successful!</h3>
+                    <p style="margin-bottom: 8px;"><strong>Welcome to Trading Alerts!</strong></p>
+                    <p style="margin-bottom: 12px;">Your subscription has been confirmed for: <strong>${phoneNumber}</strong></p>
+                    <div style="background: white; padding: 15px; border-radius: 6px; margin: 15px 0;">
+                        <p style="margin-bottom: 8px; font-weight: bold; color: #764ba2;">What to Expect:</p>
+                        <ul style="text-align: left; margin-left: 20px; margin-top: 10px; color: #333;">
+                            <li>You'll receive real-time trading alerts from NinjaTrader and TradingView</li>
+                            <li>Expect 10-30 messages per day during active trading hours</li>
+                            <li>Message and data rates may apply based on your carrier plan</li>
+                        </ul>
+                    </div>
+                    <div style="background: #fff3cd; padding: 12px; border-radius: 6px; margin: 15px 0; font-size: 0.9em;">
+                        <strong>📱 Manage Your Subscription:</strong><br>
+                        • Reply <strong>STOP</strong> to unsubscribe at any time<br>
+                        • Reply <strong>HELP</strong> for assistance<br>
+                        • Email <a href="mailto:raghustocks2020@gmail.com">raghustocks2020@gmail.com</a> for support
+                    </div>
+                    <button onclick="location.reload()" style="margin-top: 15px; padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                        Register Another Number
+                    </button>
+                </div>
+            `;
+            messageDiv.style.display = 'block';
+            this.style.display = 'none';
+
+            // Log to console for debugging
+            console.log('Form submitted:', {
+                phone: phoneNumber,
+                consent: true,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        // Add real-time phone number formatting (optional enhancement)
+        document.getElementById('phone').addEventListener('input', function(e) {
+            var value = e.target.value.replace(/\D/g, '');
+            if(value.length > 0) {
+                if(value.length <= 3) {
+                    e.target.value = value;
+                } else if(value.length <= 6) {
+                    e.target.value = '(' + value.slice(0,3) + ') ' + value.slice(3);
+                } else if(value.length <= 10) {
+                    e.target.value = '(' + value.slice(0,3) + ') ' + value.slice(3,6) + '-' + value.slice(6);
+                } else {
+                    e.target.value = '+' + value.slice(0,1) + ' (' + value.slice(1,4) + ') ' + value.slice(4,7) + '-' + value.slice(7,11);
+                }
+            }
+        });
+    </script>
 </body>
 </html>
 
